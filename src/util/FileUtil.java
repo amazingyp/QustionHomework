@@ -47,6 +47,10 @@ public class FileUtil {
 	 * 清理项目下exercise文件
 	 */
 	public static void cleanExerciseFile() {
+		File path = new File("./questionbank");
+		if(!path.exists()) {
+			path.mkdirs();
+		}
 		File file = new File("./questionbank/Exercises.txt");
 		if(!file.exists()) {
 			try {
@@ -68,9 +72,13 @@ public class FileUtil {
 	}
 	
 	/**
-	 * 清理项目下exercise文件
+	 * 清理项目下answer文件
 	 */
 	public static void cleanAnswerFile() {
+		File path = new File("./questionbank");
+		if(!path.exists()) {
+			path.mkdirs();
+		}
 		File file = new File("./questionbank/Answers.txt");
 		if(!file.exists()) {
 			try {

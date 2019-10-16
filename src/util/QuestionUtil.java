@@ -29,10 +29,10 @@ public class QuestionUtil {
 			if(sigNumber==1) {//一个运算符的情况
 				result = cn.NewNumber()+createSign()+cn.NewNumber();
 				
-				System.out.println(result);
+				//System.out.println(result);
 				Queue<Object> mid = ReadString(result);
 				Num answer = CountQueue(mid);
-				System.out.println("答案："+answer);
+				//System.out.println("答案："+answer);
 				
 				if(answer.getSon()<0 || answer.getMother()<0) {//出现负数，抛弃题目
 					now--;
@@ -54,10 +54,10 @@ public class QuestionUtil {
 				else {
 					result = cn.NewNumber()+createSign()+"("+cn.NewNumber()+createSign()+cn.NewNumber()+")";
 				}
-				System.out.println(result);
+				//System.out.println(result);
 				Queue<Object> mid = ReadString(result);
 				Num answer = CountQueue(mid);
-				System.out.println("答案："+answer);
+				//System.out.println("答案："+answer);
 				
 				if(answer.getSon()<0 || answer.getMother()<0) {//出现负数，抛弃题目
 					now--;
@@ -75,10 +75,10 @@ public class QuestionUtil {
 					result = cn.NewNumber()+createSign()+"("+cn.NewNumber()+createSign()+cn.NewNumber()+")"+createSign()+cn.NewNumber();
 				
 				}
-				System.out.println(result);
+				//System.out.println(result);
 				Queue<Object> mid = ReadString(result);
 				Num answer = CountQueue(mid);
-				System.out.println("答案："+answer);
+				//System.out.println("答案："+answer);
 				
 				if(answer.getSon()<0 || answer.getMother()<0) {//出现负数，抛弃题目
 					now--;
